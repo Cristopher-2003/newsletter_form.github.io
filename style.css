@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.imagen_newsletter_principal{
+    width: 100%;
+    height: 265px;
+    background: url(./assets/images/illustration-sign-up-mobile.svg);
+    background-size: cover;
+    border-radius: 0 0 15px 15px;
+}
+.contenedor_textos{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.title_newsletter{
+    font-size: 27px;
+    color: var(--Dark-Slate-Grey);
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.paragraph_newsletter{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--Charcoal-Grey);
+}
+.text_checklist{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 35px;
+    gap: 14px;
+}
+
+.checklist_content{
+    display: flex;
+    gap: 15px;
+}
+.parapraph_text{
+    color: var(--Charcoal-Grey);
+    font-size: 15px;
+}
+.title_form{
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.input_email{
+    width: 100%;
+    height: 37px;
+    padding: 17px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid --Grey;
+}
+
+
+.btn-cta{
+    margin: 10px 0 15px;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+
+}
+.btn-cta:hover{
+    background: linear-gradient(0.65deg, #FA7146 36.75%, #DB6E56 56.28%, #E05050 87.01%);
+    box-shadow: 5px 0px 10px rgb(242, 97, 12);
+
+}
+
+@media (min-width:800px){
+    body{
+        background-color: var(--Dark-Slate-Grey);
+    }
+    .newsletter{
+        width: 70%;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background-color: #fff;
+        display: flex;
+        flex-direction: row-reverse;
+        border-radius: 15px;
+        justify-content: space-between;
+    }
+    .imagen_newsletter_principal{
+        width: 55%;
+        height: 400px;
+        margin: 15px 15px;
+        background: url(./assets/images/illustration-sign-up-desktop.svg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+    }
+    .contenedor_textos{
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 35px;
+        overflow: hidden;
+    }
+    .title_newsletter{
+        font-size: 35px;
+        padding-bottom: 10px;   
+    }
+    .paragraph_newsletter{
+        font-size: 14px;
+    }
+    .parapraph_text{
+        font-size: 14px;
+    }
+    .btn-cta{
+        margin: 10px 0 ;
+        padding: 12px;
+        font-size: 12px;
+    }
+    .input_email{
+        height: 35px;
+        padding: 15px;
+        font-size: 14px;
+     
+    }
+    .title_form{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .parapraph_text{
+        font-size: 14px;
+    }
+}
