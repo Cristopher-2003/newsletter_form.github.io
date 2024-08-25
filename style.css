@@ -15,6 +15,11 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+.newsletter{
+    transition: opacity .5s;
+}
+
 .imagen_newsletter_principal{
     width: 100%;
     height: 265px;
@@ -66,6 +71,8 @@ body{
     font-size: 14px;
     cursor: pointer;
     border: 1px solid --Grey;
+    border-radius: 7px;
+    
 }
 
 
@@ -83,9 +90,58 @@ body{
 
 }
 .btn-cta:hover{
-    background: linear-gradient(0.65deg, #FA7146 36.75%, #DB6E56 56.28%, #E05050 87.01%);
-    box-shadow: 5px 0px 10px rgb(242, 97, 12);
+    background: linear-gradient(to right, rgb(232, 53, 110), rgb(239, 108, 38));
 
+}
+
+.error{
+    position: absolute;
+    color: var(--Tomato);
+    font-weight: bold;
+    top: 550px;
+    right: 20px;
+    font-size: .9em;
+    opacity: 0;
+    transition: opacity .3s ;
+}
+
+
+
+.newsletter-aprobado{
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+}
+.newsletter-aprobado img{
+    width: 14%;
+    margin: 100px 0 20px 0;
+}
+.newsletter-aprobado h2{
+    font-size: 2em;
+    width: 60%;
+    margin-bottom: 10px;
+}
+.newsletter-aprobado p{
+    padding: 10px 0;
+    width: 85%;
+}
+.newsletter-aprobado p span{
+    font-weight: bold;
+}
+
+.btn{
+    background-color: hsl(234, 29%, 20%);
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: auto;
+    cursor: pointer;
+    
 }
 
 @media (min-width:800px){
@@ -147,5 +203,52 @@ body{
     }
     .parapraph_text{
         font-size: 14px;
+    }
+
+
+
+
+
+   
+    .newsletter-aprobado{
+        display: none;
+        height: 70vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background-color: #fff;
+        width: 40%;
+        border-radius: 20px;
+        padding: 50px;
+    }
+    .newsletter-aprobado img{
+        width: 14%;
+        margin: 20px 0;
+    }
+    .newsletter-aprobado h2{
+            font-size: 3em;
+            width: 100%;
+            margin-bottom: 10px;
+
+    }
+    .newsletter-aprobado p{
+        width: 90%;
+        font-size: 1.1em;
+    }
+    .newsletter-aprobado div:hover{
+        background: linear-gradient(to right, rgb(232, 53, 110), rgb(239, 108, 38));
+
+
+    }
+    .error{
+        position: absolute;
+        color: var(--Tomato);
+        font-weight: bold;
+        top: 295px;
+        right: 570px;
+        font-size: .9em;
+        opacity: 0;
+        transition: opacity .3s ;
     }
 }
